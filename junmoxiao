@@ -1,0 +1,136 @@
+<div class="button-style1">
+	<a href="Memories.html" class="lk1">
+		<div class="link1">
+			<div class="bt1">
+				我很喜欢
+			</div>
+		</div>
+	</a>    
+</div>
+<div class="button-style2">
+	<a class="lk2">
+		<div class="link2">
+			<div class="bt1">
+				我不喜欢
+			</div>
+		</div>
+	</a> 
+</div>
+.button-style1 ,.button-style2{
+	position:absolute;
+	top:41%;
+	opacity:1;
+	z-index:100;
+}
+.button-style1 {
+	position:absolute;
+	left:20%;
+	animation:btn1 15s; /*这是CSS3的动画属性，着这里定义动画的名称和持续时间，也可以用animation-delay定义动画延时多少s播放*/
+}
+.button-style2 {
+	position:absolute;
+	left:68%;
+	animation:btn2 15s;
+}
+@keyframes btn1 { /*这里是对动画的定义，我们只需要定义几个关键帧，它会自动完成补间。*/
+	0% {
+		opacity:0;
+		left:43.5%;
+	}
+	70% {
+		opacity:0;
+		left:43.5%;
+	}
+	100% {
+		opacity:1;
+		left:20%;
+	}
+}
+@-webkit-keyframes btn1 { /*这里是声明获取不同浏览器的支持，还有几个干脆我就懒得写了，反正我也不是给所有人写的，自己能看就行*/
+	0% {
+		opacity:0;
+		left:43.5%;
+	}
+	70% {
+		opacity:0;
+		left:43.5%;
+	}
+	100% {
+		opacity:1;
+		left:20%;
+	}
+}
+@keyframes btn2 {
+	0% {
+		opacity:0;
+		left:43.5%;
+	}
+	70% {
+		opacity:0;
+		left:43.5%;
+	}
+	100% {
+		opacity:1;
+		left:68%;
+	}
+}
+@-webkit-keyframes btn2 {
+	0% {
+		opacity:0;
+		left:43.5%;
+	}
+	70% {
+		opacity:0;
+		left:43.5%;
+	}
+	100% {
+		opacity:1;
+		left:68%;
+	}
+}
+.lk1,.lk2 {
+	text-decoration:none;
+	font-family: Microsoft YaHei;
+	color:#fff;
+	transition:all 0.5s;
+}
+.link1,.link2 {
+	width:170px;
+	height:60px;
+	border:2px solid #fff;
+	-webkit-border:1px solid #fff;
+	border-radius:30px;
+	font-size: 23px;
+	text-align:center;
+	background: #ee9ca7;
+	transition:all 0.8s;
+}
+.link2 {
+	cursor:not-allowed;
+}
+.bt1,.bt2 {
+	position:relative;
+	top:22%;
+	vertical-align:middle;
+}
+ 
+a.lk1:hover { /*这里使用CSS选择器，定义鼠标滑过效果*/
+	color:#ee9ca7;
+	transition:all 0.5s;
+}
+.link1:hover {
+	background-color:#fff;
+	background-color:rgba(255,255,255,0,2);
+	border:2px solid #BBB;
+	transition:all 0.8s;
+}
+a.lk2:hover {
+	color:#ee9ca7;
+	transition:all 0.5s;
+}
+.link2:hover {
+	background-color:#fff;
+	background-color:rgba(255,255,255,0,2);
+	border:2px solid #BBB;
+	transition:all 0.8s;
+}
